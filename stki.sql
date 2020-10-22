@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2020 at 05:48 PM
+-- Generation Time: Oct 22, 2020 at 04:08 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -820,6 +820,33 @@ INSERT INTO `stopword` (`stopword`) VALUES
 ('yakin'),
 ('yakni'),
 ('yang');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tfidf`
+--
+
+CREATE TABLE `tfidf` (
+  `id` varchar(5) NOT NULL,
+  `no` varchar(5) NOT NULL,
+  `kata` varchar(50) NOT NULL,
+  `freq` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tfidf`
+--
+
+INSERT INTO `tfidf` (`id`, `no`, `kata`, `freq`) VALUES
+('1', '1', 'this', '1'),
+('1', '2', 'is', '1'),
+('1', '3', 'a', '2'),
+('1', '4', 'sample', '1'),
+('2', '1', 'this', '1'),
+('2', '2', 'is', '1'),
+('2', '3', 'another', '2'),
+('2', '4', 'example', '3');
 
 -- --------------------------------------------------------
 
